@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fridge"
+
+    tools:context=".Welcome">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grocery Tracker"
+        android:fontFamily="@font/lorabold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/design_default_color_on_primary"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:fontFamily="@font/montserratbold"
+        android:layout_centerInParent="true"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="30sp"
+        android:id="@+id/mWelcome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your one stop solution for tracking groceries"
+        android:fontFamily="@font/montserratbold"
+        android:layout_below="@+id/mWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:textColor="@color/design_default_color_on_primary"
+        android:id="@+id/subtitle"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG IN OR CREATE A NEW ACCOUNT"
+        android:layout_below="@+id/subtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/montserratbold"
+        android:textColor="@color/design_default_color_on_primary"
+        android:id="@+id/mLogin"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_name"
+        android:layout_below="@+id/mLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/expandbtn"
+        />
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:fontFamily="@font/montserratbold"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/expandbtn"
+        app:icon="@drawable/ic_action_register"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:icon="@drawable/ic_action_login"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_toRightOf="@+id/signupBtn"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/expandbtn"
+        />
+
+</RelativeLayout>

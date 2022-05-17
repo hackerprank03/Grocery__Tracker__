@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:title="Grocery" >
+        <menu>
+            <item android:title="Add Items"
+                android:id="@+id/adding_items"
+                android:icon="@drawable/ic_add_list" />
+            <item android:title="View Items"
+                android:id="@+id/viewing_items"
+                android:icon="@drawable/ic_view_list" />
+            <item android:title="Delete Items"
+                android:id="@+id/deleting_items"
+                android:icon="@drawable/ic_delete_list" />
+        </menu>
+    </item>
+
+    <item android:title="Recipe">
+        <menu>
+            <item android:title="Breakfast"
+                android:id="@+id/breakfast_view"
+                android:icon="@drawable/ic_action_breakfast" />
+            <item android:title="Lunch"
+                android:id="@+id/lunch_view"
+                android:icon="@drawable/ic_action_lunch" />
+            <item android:title="Dinner"
+                android:id="@+id/dinner_view"
+                android:icon="@drawable/ic_action_dinner" />
+        </menu>
+    </item>
+
+    <item android:title="Settings" >
+        <menu>
+            <item android:title="Notifications"
+                android:icon="@drawable/ic_notification"
+                app:actionLayout="@layout/toggle_switch_layout"/>
+            <item android:title="Log Out"
+                android:id="@+id/log_out"
+                android:icon="@drawable/ic_log_out" />
+        </menu>
+    </item>
+
+</menu>

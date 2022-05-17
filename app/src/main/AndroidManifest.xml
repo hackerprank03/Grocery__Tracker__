@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.grocerytracker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+   <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GroceryTracker">
+        <activity android:name="com.example.grocerytracker.TutorialSteps"></activity>
+        <activity android:name="com.example.grocerytracker.Register" />
+        <activity android:name="com.example.grocerytracker.Login" />
+        <activity android:name="com.example.grocerytracker.Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".ReminderBrodcast"/>
+        <activity android:name="com.example.grocerytracker.MainActivity">
+        </activity>
+        <receiver android:name="com.example.grocerytracker.Notification_receiver_exp"/>
+        <activity android:name="com.example.grocerytracker.Notification_activity" />
+
+        <receiver android:name="com.example.grocerytracker.Notification_receiver_lunch" />
+
+        <receiver android:name="com.example.grocerytracker.Notification_receiver_break" />
+
+        <receiver android:name=".Notification_receiver_Dinner" />
+        <activity android:name="com.example.grocerytracker.DetailsRecipe"/>
+        <activity android:name="com.example.grocerytracker.Recipe" />
+        <activity android:name="com.example.grocerytracker.Expiry_activity"/>
+
+
+      
+      
+      
+        <activity android:name="com.example.grocerytracker.updateGrocery"/>
+        <activity android:name="com.example.grocerytracker.listGrocery"/>
+        <activity android:name="com.example.grocerytracker.addGrocery"/>
+        <activity android:name="com.example.grocerytracker.updateImageGrocery"/>
+    </application>
+
+</manifest>

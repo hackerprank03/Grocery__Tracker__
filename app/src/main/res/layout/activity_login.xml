@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fridge"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grocery Tracker"
+        android:fontFamily="@font/lorabold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/design_default_color_on_primary"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back!\nLog in back to continue"
+        android:fontFamily="@font/montserratbold"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/textView"/>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="500dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/loginLayout">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Email">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Password">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/registerNavi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Register Now"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/montserratmedium"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/fgtPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:layout_marginLeft="100dp"
+            android:fontFamily="@font/montserratmedium"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Log In"
+        android:fontFamily="@font/montserratregular"
+        android:id="@+id/loginBtn"
+        />
+
+   <ProgressBar
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       style="?android:attr/progressBarStyle"
+       android:id="@+id/progressBar"
+       android:visibility="invisible"
+       android:layout_below="@+id/loginBtn"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="50dp"/>
+
+</RelativeLayout>

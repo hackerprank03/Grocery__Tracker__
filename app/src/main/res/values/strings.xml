@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GroceryTracker</string>
+    <string name="my_files">My Files</string>
+    <string name="shared">Shared</string>
+    <string name="openNavDrawer">Navigation Drawer Open</string>
+    <string name="closeNavDrawer">Navigation Drawer Close</string>
+</resources>

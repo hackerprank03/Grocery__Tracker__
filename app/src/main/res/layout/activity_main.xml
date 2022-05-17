@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/drawerLayout"
+    >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/semi_circle">
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Grocery Tracker"
+                    android:fontFamily="@font/lorabold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rec_fridge"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="74dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ownerName"
+                    android:fontFamily="@font/montserratmedium"
+                    android:id="@+id/owner"
+                    android:layout_toRightOf="@+id/verticalLine"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Storage"
+                    android:fontFamily="@font/montserratbold"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/verticalLine"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"/>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/fridgeicon"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="90dp"
+                    android:background="@color/black"
+                    android:id="@+id/verticalLine"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/FloatingMenu"
+                android:layout_width="380dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/rectangle"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/ic_add_list"
+                    android:id="@+id/addBtn"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:layout_below="@+id/addBtn"
+                    android:id="@+id/addTxt"
+                    android:fontFamily="@font/loraregular"
+                    android:layout_marginLeft="35dp"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_toRightOf="@+id/addBtn"
+                    android:src="@drawable/ic_view_list"
+                    android:id="@+id/viewBtn"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:layout_below="@+id/viewBtn"
+                    android:layout_toRightOf="@+id/addTxt"
+                    android:id="@+id/viewTxt"
+                    android:fontFamily="@font/loraregular"
+                    android:layout_marginLeft="63dp"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/ic_recipe_book"
+                    android:layout_toRightOf="@+id/viewBtn"
+                    android:id="@+id/recipeBtn"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recipe"
+                    android:layout_below="@+id/recipeBtn"
+                    android:layout_toRightOf="@+id/viewTxt"
+                    android:id="@+id/recipeTxt"
+                    android:fontFamily="@font/loraregular"
+                    android:layout_marginLeft="50dp"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/ic_grocery_shop"
+                    android:layout_toRightOf="@+id/recipeBtn"
+                    android:id="@+id/storeBtn"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Store"
+                    android:layout_below="@+id/storeBtn"
+                    android:layout_toRightOf="@+id/recipeTxt"
+                    android:fontFamily="@font/loraregular"
+                    android:layout_marginLeft="46dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FloatingMenu"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/montserratmedium"
+                android:text="Expiring Soon"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/expiry_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FloatingMenu"
+                android:layout_marginTop="65dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Discover Daily"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:id="@+id/discTxt"
+                android:fontFamily="@font/montserratmedium"
+                android:layout_below="@+id/expiry_recycler"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cards_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/discTxt" />
+        </RelativeLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/drawer_toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:backgroundTint="@android:color/transparent"
+            android:elevation="0dp"
+            android:gravity="center"
+            app:title="  "
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/drawer_menu_list"
+        android:id="@+id/navi_view"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navi_header"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

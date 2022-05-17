@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation = "vertical"
+    android:gravity = "center"
+    android:background="@drawable/wallpaper"
+    tools:context=".addGrocery">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="188dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/round_edittext"
+        android:src="@drawable/image" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_edittext">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/name"
+            android:drawablePadding="12dp"
+            android:id="@+id/et_grocery_name"
+            android:hint="Product Name:" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_edittext">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/type"
+            android:drawablePadding="12dp"
+            android:id="@+id/et_type"
+            android:hint="Type of Product:"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_edittext">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/quantity"
+            android:drawablePadding="12dp"
+            android:id="@+id/et_quantity"
+
+            android:hint="Quantity:"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/et_expdate"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_edittext"
+        android:drawableStart="@drawable/date"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Select Expiry Date:"
+        android:padding="10dp"
+        android:textSize="14sp"></TextView>
+
+    <Button
+        android:id="@+id/et_store"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="Add Item"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/et_cancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:text="Cancel"/>
+
+</LinearLayout>

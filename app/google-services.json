@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "504820331061",
+    "firebase_url": "https://grocery-tracker-9633e-default-rtdb.firebaseio.com",
+    "project_id": "grocery-tracker-9633e",
+    "storage_bucket": "grocery-tracker-9633e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504820331061:android:b823b67f7151c9775f777c",
+        "android_client_info": {
+          "package_name": "com.example.grocerymanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504820331061-04mn7eolqr6haurl0k96b5klc5n0mm3n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMn2eEaou0C_-sqOj1HJC37Dq6nrqvqVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504820331061-04mn7eolqr6haurl0k96b5klc5n0mm3n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504820331061:android:ce753c8831966dfd5f777c",
+        "android_client_info": {
+          "package_name": "com.example.grocerytracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504820331061-c9ksg1vpte4kq7q6alqs6fdm2acmehdl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.grocerytracker",
+            "certificate_hash": "f88b8d63a90fd1989f78f0ec264315e294270647"
+          }
+        },
+        {
+          "client_id": "504820331061-04mn7eolqr6haurl0k96b5klc5n0mm3n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMn2eEaou0C_-sqOj1HJC37Dq6nrqvqVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504820331061-04mn7eolqr6haurl0k96b5klc5n0mm3n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
